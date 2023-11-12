@@ -73,7 +73,7 @@ Route::group(['prefix' => 'articles'], function () {
     Route::get('/', [ArticleController::class, 'index']);
     //Route::post('/', [CatController::class, 'store'])->middleware('auth:api');
     Route::post('/', [ArticleController::class, 'store']);
-    Route::get('/{id}', [ArticleController::class, 'show']);
+    Route::get('/{id}', [ArticleController::class, 'show']) ;
 
 });
 
